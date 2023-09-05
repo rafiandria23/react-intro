@@ -1,22 +1,24 @@
-import { useEffect, useState } from 'react'
-import socket from '../services/socket'
+import { useEffect, useState } from 'react';
+
+// Services
+import socket from '../services/socket';
 
 function useSocketMessages() {
-  const [messages, setMessages] = useState([])
+  const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    const handler = msg => {
-      setMessages(msgs => [...msgs, msg])
-    }
+    const handler = (msg) => {
+      setMessages((msgs) => [...msgs, msg]);
+    };
 
-    socket.on('message', handler)
+    socket.on('message', handler);
 
     return () => {
-      socket.off('message', handler)
-    }
-  }, [])
+      socket.off('message', handler);
+    };
+  }, []);
 
-  return messages
+  return messages;
 }
 
-export default useSocketMessages
+export default useSocketMessages;

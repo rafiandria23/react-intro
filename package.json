@@ -1,43 +1,26 @@
 {
-  "name": "majestic-react-intro",
-  "version": "0.1.0",
+  "name": "@rafiandria23/react-intro",
+  "version": "0.0.1",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0",
-    "socket.io-client": "^2.3.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env BROWSER=none react-scripts start",
+    "test": "react-scripts test --coverage",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:styles": "postcss src/tailwind.css -o src/index.css",
-    "prebuild": "NODE_ENV=production npm run build:styles",
-    "prestart": "npm run build:styles"
+    "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "socket.io-client": "^4.7.2"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "postcss-cli": "^7.1.0",
-    "tailwindcss": "^1.2.0"
+    "@testing-library/jest-dom": "^6.1.2",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "autoprefixer": "^10.4.15",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
   }
 }
