@@ -19,8 +19,9 @@ function ArticleForm(props) {
   };
 
   return (
-    <form className='w-100' onSubmit={handleSubmit}>
+    <form data-testid='article-form' className='w-100' onSubmit={handleSubmit}>
       <input
+        data-testid='article-form.title'
         className='border border-gray-700 rounded px-3 py-2 mb-3 w-full'
         type='text'
         name='title'
@@ -30,6 +31,7 @@ function ArticleForm(props) {
       />
 
       <textarea
+        data-testid='article-form.content'
         className='border border-gray-700 rounded px-3 py-2 mb-3 w-full'
         name='content'
         placeholder='Content'

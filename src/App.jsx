@@ -31,8 +31,7 @@ class App extends Component {
       articles: [
         ...this.state.articles,
         {
-          id:
-            (this.state.articles[this.state.articles.length - 1]?.id || 0) + 1,
+          id: this.state.articles[this.state.articles.length - 1].id + 1,
           ...article,
         },
       ],
@@ -57,6 +56,7 @@ class App extends Component {
 
           <div>
             <button
+              data-testid='chat-box-visibility-button'
               className='border border-black rounded py-2 px-3 mb-6'
               onClick={() =>
                 this.setState((state) => ({ showChatBox: !state.showChatBox }))

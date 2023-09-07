@@ -18,14 +18,16 @@ function ChatBox() {
   };
 
   return (
-    <form className='w-100' onSubmit={handleSubmit}>
+    <form data-testid='chat-box-form' className='w-100' onSubmit={handleSubmit}>
       <textarea
+        data-testid='chat-box-form.message'
         className='border border-gray-700 rounded px-3 py-2 mb-3 w-full'
         name='body'
         placeholder='message'
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
+
       <button
         className='block border border-gray-700 rounded px-5 py-2'
         type='submit'
