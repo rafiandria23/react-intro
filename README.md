@@ -17,7 +17,7 @@ yarn install
 ### Run
 
 ```sh
-yarn install
+yarn start
 ```
 
 ### Test
