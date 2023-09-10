@@ -1,5 +1,5 @@
 import io from 'socket.io-client';
 
-const socket = io('test');
+const socket = io('http://127.0.0.1:2000');
 
 export default socket;

@@ -56,7 +56,7 @@ describe('<App />', () => {
     userEvent.click(chatBoxVisibilityButton);
 
     await waitFor(() => {
-      const chatBox = screen.getByTestId('chat-box-form');
+      const chatBox = screen.getByTestId('chat-box');
 
       expect(chatBox).toBeInTheDocument();
     });

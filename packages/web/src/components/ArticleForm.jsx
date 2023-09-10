@@ -6,8 +6,8 @@ function ArticleForm(props) {
 
   useEffect(() => {}, []);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
     props.addArticle({
       title,

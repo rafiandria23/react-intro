@@ -12,17 +12,26 @@ describe('<ChatBox />', () => {
   });
 
   test('adds a message...', () => {
-    const mockedMessage = 'Mocked Message';
+    const mockedMessage = {
+      name: 'Mocked Name',
+      message: 'Mocked Message',
+    };
     const mockedSocketEmit = jest.spyOn(socket, 'emit');
 
     render(<ChatBox />);
 
-    const form = screen.getByTestId('chat-box-form');
-    const messageInput = screen.getByTestId('chat-box-form.message');
+    const form = screen.getByTestId('chat-box');
+    const nameInput = screen.getByTestId('chat-box.name');
+    const messageInput = screen.getByTestId('chat-box.message');
 
+    fireEvent.change(nameInput, {
+      target: {
+        value: mockedMessage.name,
+      },
+    });
     fireEvent.change(messageInput, {
       target: {
-        value: mockedMessage,
+        value: mockedMessage.message,
       },
     });
     fireEvent.submit(form);
