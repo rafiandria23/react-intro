@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "BROWSER=none react-scripts start",
-    "test": "react-scripts test --verbose --coverage",
+    "test": "react-scripts test --verbose --coverage --watchAll false",
     "build": "react-scripts build"
   },
   "dependencies": {
