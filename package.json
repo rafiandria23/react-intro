@@ -1,52 +1,17 @@
 {
-  "name": "@rafiandria23/react-intro",
-  "version": "0.0.1",
+  "name": "react-intro",
   "private": true,
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
-    "test": "react-scripts test --verbose --coverage && coveralls < coverage/lcov.info",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "dev": "lerna watch -- lerna run start",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "start": "lerna run start"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "socket.io-client": "^4.7.2",
-    "web-vitals": "^3.4.0"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {},
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.1.2",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "autoprefixer": "^10.4.15",
-    "coveralls": "^3.1.1",
-    "postcss": "^8.4.29",
-    "tailwindcss": "^3.3.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "!<rootDir>/src/*.js",
-      "!<rootDir>/src/index.jsx",
-      "!<rootDir>/src/hooks/*.js"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "lerna": "^7.2.0"
   }
 }
