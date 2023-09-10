@@ -1,6 +1,6 @@
 # React Intro
 
-[![Build Status](https://travis-ci.com/rafiandria23/react-intro.svg?branch=main)](https://travis-ci.com/rafiandria23/react-intro)
+[![Build Status](https://app.travis-ci.com/rafiandria23/react-intro.svg?branch=main)](https://app.travis-ci.com/rafiandria23/react-intro)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
@@ -20,29 +20,27 @@ React introduction using Socket.IO
 ### Installation
 
 ```sh
-# Install Lerna
-npm i -g lerna
-# or
+# Lerna
 yarn global add lerna
 
-# Install Dependencies
+# Dependencies
 yarn install
 ```
 
 ### Run
 
 ```sh
-lerna run start
+yarn dev
 ```
 
 ### Test
 
 ```sh
-lerna run test
+yarn test
 ```
 
 ### Build
 
 ```sh
-lerna run build --scope web
+yarn build
 ```
