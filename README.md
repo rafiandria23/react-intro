@@ -44,3 +44,7 @@ yarn test
 ```sh
 yarn build
 ```
+
+## License
+
+[MIT](LICENSE)
