@@ -3,14 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "BROWSER=none react-scripts start",
+    "dev": "BROWSER=none react-scripts start",
     "test": "react-scripts test --verbose --coverage --watchAll false",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "start": "serve -s build"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
+    "serve": "^14.2.1",
     "socket.io-client": "^4.7.2",
     "web-vitals": "^3.4.0"
   },

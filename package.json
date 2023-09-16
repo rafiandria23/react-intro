@@ -2,7 +2,7 @@
   "name": "react-intro",
   "private": true,
   "scripts": {
-    "dev": "lerna watch -- lerna run start",
+    "dev": "lerna run dev",
     "test": "lerna run test",
     "build": "lerna run build",
     "start": "lerna run start"
