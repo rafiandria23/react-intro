@@ -1,17 +1,19 @@
 {
-  "name": "react-intro",
-  "private": true,
-  "scripts": {
-    "dev": "lerna run dev",
-    "test": "lerna run test",
-    "build": "lerna run build",
-    "start": "lerna run start"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {},
-  "devDependencies": {
-    "lerna": "^7.2.0"
-  }
+	"name": "react-intro",
+	"private": true,
+	"scripts": {
+		"dev": "lerna run dev",
+		"test": "lerna run test",
+		"build": "lerna run build",
+		"start": "lerna run start",
+		"prepare": "husky install"
+	},
+	"workspaces": [
+		"packages/*"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"husky": "^8.0.3",
+		"lerna": "^7.2.0"
+	}
 }
