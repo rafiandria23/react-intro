@@ -22,5 +22,6 @@
     "prettier": "^3.0.3",
     "socket.io-client": "^4.7.2",
     "supertest": "^6.3.3"
-  }
+  },
+  "license": "MIT"
 }

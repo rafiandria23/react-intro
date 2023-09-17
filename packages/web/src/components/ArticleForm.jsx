@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 
 function ArticleForm(props) {
+  const [disabled, setDisabled] = useState(true);
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    setDisabled(!!title.match(/^\s*$/g) || !!content.match(/^\s*$/g));
+  }, [setDisabled, title, content]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -42,6 +45,7 @@ function ArticleForm(props) {
       <button
         className='block border border-gray-700 rounded px-5 py-2'
         type='submit'
+        disabled={disabled}
       >
         Submit
       </button>
