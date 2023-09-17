@@ -10,15 +10,15 @@ import useSocketMessages from '../hooks/useSocketMessages';
 import ChatList from './ChatList';
 
 function ChatBox() {
-  const [disabled, setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(true);
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
 
   const messages = useSocketMessages();
 
   useEffect(() => {
-    setDisabled(/\s/g.test(name) || /\s/g.test(message));
-  }, [name, message]);
+    setDisabled(!!name.match(/^\s*$/g) || !!message.match(/^\s*$/g));
+  }, [setDisabled, name, message]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

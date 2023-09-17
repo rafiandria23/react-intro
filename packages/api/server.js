@@ -24,8 +24,22 @@ function createServer() {
     });
   });
 
+  let totalConnectedClients = 0;
+  let totalSentMessages = 0;
+
   io.on('connection', (socket) => {
     console.info(`[Socket] ${socket.id} connected!`);
+
+    totalConnectedClients++;
+    console.info(`[Socket] Total connected clients: ${totalConnectedClients}.`);
+
+    socket.on('disconnect', (reason) => {
+      totalConnectedClients--;
+      console.info(
+        `[Socket] Total connected clients: ${totalConnectedClients}.`,
+      );
+      console.info(`[Socket] ${socket.id} disconnected! Reason: ${reason}.`);
+    });
 
     socket.on('message', (message) => {
       const newMessage = {
@@ -34,6 +48,9 @@ function createServer() {
       };
 
       io.emit('message', newMessage);
+
+      totalSentMessages++;
+      console.info(`[Socket] Total sent messages: ${totalSentMessages}.`);
     });
   });
 

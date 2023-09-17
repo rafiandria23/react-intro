@@ -10,5 +10,5 @@ const { PORT = 2000 } = process.env;
 const { server } = createServer();
 
 server.listen(PORT, () => {
-  console.info(`[React Intro Server] Listening on port ${PORT}!`);
+  console.info(`[Server] Listening on port ${PORT}!`);
 });

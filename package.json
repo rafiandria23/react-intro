@@ -15,5 +15,6 @@
 	"devDependencies": {
 		"husky": "^8.0.3",
 		"lerna": "^7.2.0"
-	}
+	},
+	"license": "MIT"
 }
