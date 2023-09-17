@@ -16,8 +16,5 @@
 		"husky": "^8.0.3",
 		"lerna": "^7.2.0"
 	},
-	"engines": {
-		"node": ">=16.x.x <=20.x.x"
-	},
 	"license": "MIT"
 }
