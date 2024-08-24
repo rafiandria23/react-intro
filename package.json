@@ -1,12 +1,12 @@
 {
-	"name": "react-intro",
+	"name": "@rafiandria23/react-intro",
 	"private": true,
 	"scripts": {
 		"dev": "lerna run dev",
 		"test": "lerna run test",
 		"build": "lerna run build",
 		"start": "lerna run start",
-		"prepare": "husky install"
+		"prepare": "husky"
 	},
 	"workspaces": [
 		"packages/*"
@@ -16,5 +16,6 @@
 		"husky": "^9.0.0",
 		"lerna": "^8.0.0"
 	},
-	"license": "MIT"
+	"license": "MIT",
+	"packageManager": "yarn@1.22.22+sha256.c17d3797fb9a9115bf375e31bfd30058cac6bc9c3b8807a3d8cb2094794b51ca"
 }

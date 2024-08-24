@@ -1,6 +1,6 @@
 # React Intro
 
-[![Build Status](https://app.travis-ci.com/rafiandria23/react-intro.svg?branch=main)](https://app.travis-ci.com/rafiandria23/react-intro)
+[![GitHub Actions Build](https://github.com/rafiandria23/react-intro/actions/workflows/ci.yaml/badge.svg)](https://github.com/rafiandria23/react-intro/actions/workflows/ci.yaml)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
