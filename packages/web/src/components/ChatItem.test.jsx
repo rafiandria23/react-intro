@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import ChatItem from './ChatItem';
 
 describe('<ChatItem />', () => {
-  test('renders a message properly...', () => {
+  test('renders message properly', () => {
     const mockedMessage = {
       id: 'Mocked ID',
       name: 'Mocked Name',

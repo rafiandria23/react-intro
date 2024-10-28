@@ -4,7 +4,7 @@ import { render, screen, fireEvent } from '@testing-library/react';
 import ArticleForm from './ArticleForm';
 
 describe('<ArticleForm />', () => {
-  test('adds an article...', async () => {
+  test('adds article', async () => {
     const mockedArticle = {
       title: 'Mocked Title',
       content: 'Mocked Content',

@@ -13,7 +13,7 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=rafiandria23_react-intro&metric=bugs)](https://sonarcloud.io/summary/new_code?id=rafiandria23_react-intro)
 
-React introduction using Socket.IO.
+React introduction using [Socket.IO](https://socket.io).
 
 ## Getting Started
 
