@@ -1,6 +1,7 @@
 {
 	"name": "@rafiandria23/react-intro",
 	"private": true,
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "lerna run dev",
 		"test": "lerna run test",
