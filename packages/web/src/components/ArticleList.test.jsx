@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import ArticleList from './ArticleList';
 
 describe('<ArticleList />', () => {
-  test('renders articles properly...', () => {
+  test('renders articles properly', () => {
     const mockedArticles = [
       {
         id: 1,

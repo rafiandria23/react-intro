@@ -57,7 +57,7 @@ describe('React Intro Server', () => {
       clientSocket.close();
     });
 
-    test('sends message to server...', (done) => {
+    test('sends message to server', (done) => {
       clientSocket.on('message', (message) => {
         expect(message.id).toBe(mockedMessage.id);
         expect(message.name).toBe(mockedMessage.name);
@@ -69,7 +69,7 @@ describe('React Intro Server', () => {
       serverSocket.emit('message', mockedMessage);
     });
 
-    test('send message to client...', (done) => {
+    test('sends message to client', (done) => {
       serverSocket.on('message', (message) => {
         expect(message.name).toBe(mockedMessage.name);
         expect(message.message).toBe(mockedMessage.message);

@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import ChatList from './ChatList';
 
 describe('<ChatList />', () => {
-  test('renders messages properly...', () => {
+  test('renders messages properly', () => {
     const mockedMessages = [
       {
         id: 'Mocked ID',

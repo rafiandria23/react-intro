@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import ArticleItem from './ArticleItem';
 
 describe('<ArticleItem />', () => {
-  test('renders an article properly...', () => {
+  test('renders article properly', () => {
     const mockedArticle = {
       title: 'Mocked Title',
       content: 'Mocked Content',

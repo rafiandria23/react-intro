@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 import App from './App';
 
 describe('<App />', () => {
-  test('renders properly...', () => {
+  test('renders properly', () => {
     render(<App />);
 
     const title = screen.getByText(/Post an Article/i);
@@ -13,7 +13,7 @@ describe('<App />', () => {
     expect(title).toBeInTheDocument();
   });
 
-  test('adds an article...', async () => {
+  test('adds article', async () => {
     const mockedArticle = {
       title: 'Mocked Title',
       content: 'Mocked Content',
@@ -46,7 +46,7 @@ describe('<App />', () => {
     expect(articleContent).toBeInTheDocument();
   });
 
-  test('shows <ChatBox />...', async () => {
+  test('shows <ChatBox />', async () => {
     render(<App />);
 
     const chatBoxVisibilityButton = screen.getByTestId(

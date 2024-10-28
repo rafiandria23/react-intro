@@ -11,7 +11,7 @@ describe('<ChatBox />', () => {
     jest.clearAllMocks();
   });
 
-  test('adds a message...', () => {
+  test('adds message', () => {
     const mockedMessage = {
       name: 'Mocked Name',
       message: 'Mocked Message',
